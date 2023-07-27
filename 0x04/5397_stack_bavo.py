@@ -7,7 +7,7 @@ for _ in range(T):
     #커서의 왼쪽에 있는 문자열
     left_cursor = []
     #커서의 오른쪽에 있는 문자열(역순으로 들어옴)
-    right_cursor = []
+    right_cursor = [] 
     
     for char in input_text:
         #커서 왼쪽으로 옮기기
