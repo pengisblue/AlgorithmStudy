@@ -17,8 +17,8 @@
 ## 📝 workbook
 
 ### BOJ
-|||
-|:--|:--|
+||
+|:--|
 |[01_Data Structure](https://www.acmicpc.net/workbook/view/16272) - Array, Prefix_sum, Stack, Queue|
 |[02_Sorting](https://www.acmicpc.net/workbook/view/16273) - Sorting|
 |[03_Search](https://www.acmicpc.net/workbook/view/16274) - DFS, BFS, Binary_Search|
@@ -27,6 +27,6 @@
 |[바킹독의 실전 알고리즘](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)|
 
 ### Programmers
-|||
-|:--|:--|
+||
+|:--|
 |[코딩테스트 고득점 Kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)|
