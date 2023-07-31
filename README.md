@@ -19,11 +19,13 @@
 ### BOJ
 ||
 |:--|
-|[01_Data Structure](https://www.acmicpc.net/workbook/view/16272) - Array, Prefix_sum, Stack, Queue|
-|[02_Sorting](https://www.acmicpc.net/workbook/view/16273) - Sorting|
-|[03_Search](https://www.acmicpc.net/workbook/view/16274) - DFS, BFS, Binary_Search|
+|[01_List 1](https://www.acmicpc.net/workbook/view/16336) - Array, Prefix sum, Bubble sort|
+|[02_List 2](https://www.acmicpc.net/workbook/view/16338) - Two Pointers, Selection Sort, Insertion Sort, Binary_Search|
+|[03_Stack_Queue](https://www.acmicpc.net/workbook/view/16337) - Stack, Queue|
 |[04_Tree](https://www.acmicpc.net/workbook/view/16275) - Tree|
 |[05_Greedy](https://www.acmicpc.net/workbook/view/16276) - Greedy|
+|[06_Sorting](https://www.acmicpc.net/workbook/view/16273) - Sorting|
+|[07_Search](https://www.acmicpc.net/workbook/view/16274) - DFS, BFS|
 |[바킹독의 실전 알고리즘](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)|
 
 ### Programmers
