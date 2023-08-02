@@ -6,27 +6,14 @@ N, L = map(int, input().split())
 
 numbers = list(map(int, input().split()))
 
-result_list = []
+# 값, 인덱스
+for i in range(N):
+    while d and d[-1][0] > numbers[i]:
+        d.pop()
+    if d and d[0][1] < i - L + 1:
+        d.popleft()
+    d.append((numbers[i], i))
+    # print(d)
+    print(d[0][0], end=' ')
 
-for i in range(L):
-    d.append(numbers[i])
-    if i - L + 1 > 0:
-        if d.popleft() == int(result_list[-1]):
-            result_list.append(str(min(d)))
-        else:
-            result_list.append(result_list[-1])
-    else:
-        result_list.append(str(min(d)))
 
-for i in range(L, N):
-    d.append(numbers[i])
-    
-    if d.popleft() == int(result_list[-1]):
-        result_list.append(str(min(d)))
-    else:
-        if d[-1] < int(result_list[-1]):
-            result_list.append(str(d[-1]))
-        else:
-            result_list.append(result_list[-1])
-
-print(' '.join(result_list))
