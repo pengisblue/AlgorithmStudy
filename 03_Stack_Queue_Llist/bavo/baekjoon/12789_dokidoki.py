@@ -1,4 +1,7 @@
 # 도키도키 간식드리미
+import sys
+
+input = sys.stdin.readline
 
 def solution(arr, number):
     stack = []

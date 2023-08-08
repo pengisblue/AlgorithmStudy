@@ -3,36 +3,33 @@
 
 from collections import deque
 
-string_list = input()
 
-bomb_str = list(input())
-bomb = deque(bomb_str)
+def bomb(stack, bomb):
+    stack_index = len(stack) - 1
+    for i in range(bomb_len):
+        if stack[stack_index] != bomb[bomb_len - 1 - i]:
+            return
+        stack_index -= 1
+
+    for i in range(bomb_len):
+        stack.pop()
+
+
+original_str = input()
+
+bomb_str = input()
 
 bomb_len = len(bomb_str)
 
-temp_string = string_list
+result = []
 
-bomb_bool = True
+for i in range(len(original_str)):
+    result.append(original_str[i])
 
-while bomb_bool:
-    result = deque([])
-    temp_buffer = deque([])
-
-    bomb_bool = False
-    for i in temp_string:
-        temp_buffer.append(i)
-        if temp_buffer == bomb:
-            temp_buffer = deque([])
-            bomb_bool = True
-        elif len(temp_buffer) == bomb_len:
-            result.append(temp_buffer.popleft())
-
-    while temp_buffer:
-        result.append(temp_buffer.popleft())
-
-    temp_string = ''.join(result)
+    if original_str[i] == bomb_str[-1] and len(result) >= bomb_len:
+        bomb(result, bomb_str)
 
 if result:
-    print(temp_string)
+    print(*result, sep='')
 else:
-    print("FRULA")
+    print('FRULA')
