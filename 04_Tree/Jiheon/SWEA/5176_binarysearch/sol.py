@@ -1,4 +1,3 @@
-import heapq
 import sys
 sys.stdin = open('input.txt')
 
@@ -13,6 +12,7 @@ def inorder(node):
 T = int(input())
 for t in range(T):
     N = int(input())
-    tree = [0] *  
-    num_list = list(map(int, input().split()))
-    heapq.heapify(num_list)
+    tree = [0] * (N + 1)
+    cnt = 1
+    inorder(1)
+    print(f'#{t+1}', tree[1], tree[N//2])
