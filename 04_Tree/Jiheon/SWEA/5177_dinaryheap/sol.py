@@ -1,18 +1,19 @@
-import heapq
 import sys
 sys.stdin = open('input.txt')
 
-def inorder(node):
-    global cnt
-    if node <= N:
-        inorder(node*2)
-        tree[node] = cnt
-        cnt += 1
-        inorder(node*2+1)
+def binaryheap(tree):
+    for i in range(1, len(tree)):
+        while tree[i//2] > tree[i]:
+            tree[i//2], tree[i] = tree[i], tree[i//2]
+            i //= 2
 
 T = int(input())
 for t in range(T):
     N = int(input())
-    tree = [0] *  
-    num_list = list(map(int, input().split()))
-    heapq.heapify(num_list)
+    tree = [0] + list(map(int, input().split()))
+    binaryheap(tree)
+    sum_value = 0
+    while N:
+        N //= 2
+        sum_value += tree[N]
+    print(f'#{t+1}',sum_value)
