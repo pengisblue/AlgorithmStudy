@@ -25,7 +25,7 @@
 |[04_Tree](https://www.acmicpc.net/workbook/view/16275) - Tree|
 |[05_Greedy](https://www.acmicpc.net/workbook/view/16276) - Greedy|
 |[06_Sorting](https://www.acmicpc.net/workbook/view/16273) - Insertion Sort, Quick Sort, Mergh Sort, Radix Sort|
-|[07_Search](https://www.acmicpc.net/workbook/view/16274) - DFS, BFS|
+|[07_Search](https://www.acmicpc.net/workbook/view/16274) - DFS, BFS, BackTracking|
 |[바킹독의 실전 알고리즘](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)|
 
 ### Programmers
