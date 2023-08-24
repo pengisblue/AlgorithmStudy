@@ -20,7 +20,6 @@ def bfs(start):
 
 V = int(input())
 graph = [[] for _ in range(V+1)]
-leap = []
 for _ in range(V):
     edge = list(map(int, input().split()))
     i = 1
